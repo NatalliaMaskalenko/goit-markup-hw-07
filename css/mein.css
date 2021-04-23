@@ -857,6 +857,7 @@ img {
 
 .form__container {
   position: relative;
+  display: block;
 }
 
 .form__text {
