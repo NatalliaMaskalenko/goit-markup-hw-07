@@ -21,40 +21,49 @@
     <!-- Шапка страницы -->
     <header class="header">
       <!-- Навигация -->
-      <div class="container">
+      <div class="container header__container">
         <nav class="main-nav">
-          <a class="logo" href="./index.html">
-            Web<span class="tiny">Studio</span></a
+          <a class="logo logo__header" href="./index.html">
+            Web<span class="logo--dark">Studio</span></a
           >
           <ul class="pagination list">
-            <li class="pagination-item">
-              <a class="pagination-link" href="./index.html">Студия</a>
+            <li class="pagination__item">
+              <a class="pagination__link link--fixed-size" href="./index.html"
+                >Студия</a
+              >
             </li>
 
-            <li class="pagination-item">
-              <a class="pagination-link current" href="./portfolio.html"
+            <li class="pagination__item">
+              <a
+                class="pagination__link link--fixed-size current"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
 
-            <li class="pagination-item">
-              <a class="pagination-link" href="/Контакты">Контакты</a>
+            <li class="pagination__item">
+              <a class="pagination__link link--fixed-size" href="/Контакты"
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
         <!-- Для связи -->
         <ul class="contacts list">
-          <li class="contacts-item">
-            <a class="contacts-link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
+          <li class="contacts__item">
+            <a
+              class="contacts__link link--fixed-size"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/background/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a class="contacts-link" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link link--fixed-size" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/background/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -68,217 +77,201 @@
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
-
           <h2 class="visually-hidden">Фильтр</h2>
-
-          <ul class="list nav">
-            <li class="nav-item">
-              <button class="button" type="button">Все</button>
+          <ul class="navigation list">
+            <li class="navigation__item">
+              <button class="navigation__button" type="button">Все</button>
             </li>
 
-            <li class="nav-item">
-              <button class="button" type="button">Веб-сайты</button>
+            <li class="navigation__item">
+              <button class="navigation__button" type="button">
+                Веб-сайты
+              </button>
             </li>
 
-            <li class="nav-item">
-              <button class="button" type="button">Приложения</button>
+            <li class="navigation__item">
+              <button class="navigation__button" type="button">
+                Приложения
+              </button>
             </li>
 
-            <li class="nav-item">
-              <button class="button" type="button">Дизайн</button>
+            <li class="navigation__item">
+              <button class="navigation__button" type="button">Дизайн</button>
             </li>
 
-            <li class="nav-item">
-              <button class="button" type="button">Маркетинг</button>
+            <li class="navigation__item">
+              <button class="navigation__button" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <h2 class="visually-hidden">Галерея проектов</h2>
-
-          <ul class="list grid">
-            <li class="gallery-item grid-item">
-              <a class="gallery-link" href="/">
-                <div class="gallery-wrap">
-                  <div class="gallery-animation">
-                    <img
-                      src="./images/Portfolio/tehnokryak.jpg"
-                      width="370"
-                      height="294"
-                      alt="Ноутбук"
-                    />
-                    <p class="gallery-text">
-                      Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.
-                    </p>
-                  </div>
-                  <div class="gallery-container">
-                    <h3 class="gallery-title">Технокряк</h3>
-                    <p class="gallery-name">Веб-сайт</p>
-                  </div>
+          <ul class="gallery list">
+            <li class="gallery__item">
+              <a class="gallery__link" href="/">
+                <div class="gallery__animation">
+                  <img
+                    src="./images/Portfolio/tehnokryak.jpg"
+                    width="370"
+                    height="294"
+                    alt="Ноутбук"
+                  />
+                  <p class="gallery__text">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="gallery__container">
+                  <h3 class="gallery__title">Технокряк</h3>
+                  <p class="gallery__name">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="gallery-item grid-item">
-              <a class="gallery-link" href="/">
-                <div class="gallery-wrap">
-                  <div class="gallery-animation">
-                    <img
-                      src="./images/Portfolio/neworlean.jpg"
-                      width="370"
-                      height="294"
-                      alt="Два парня играют в баскутбол"
-                    />
-                    <p class="gallery-text"></p>
-                  </div>
-                  <div class="gallery-container">
-                    <h3 class="gallery-title">
-                      Постер New Orlean vs Golden Star
-                    </h3>
-                    <p class="gallery-name">Дизайн</p>
-                  </div>
+            <li class="gallery__item">
+              <a class="gallery__link" href="/">
+                <div class="gallery__animation">
+                  <img
+                    src="./images/Portfolio/neworlean.jpg"
+                    width="370"
+                    height="294"
+                    alt="Два парня играют в баскутбол"
+                  />
+                  <p class="gallery__text"></p>
+                </div>
+                <div class="gallery__container">
+                  <h3 class="gallery__title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="gallery__name">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="gallery-item grid-item">
-              <a class="gallery-link" href="/">
-                <div class="gallery-wrap">
-                  <div class="gallery-animation">
-                    <img
-                      src="./images/Portfolio/seafood.jpg"
-                      width="370"
-                      height="294"
-                      alt="Логотип ресторана Seafood "
-                    />
-                    <p class="gallery-text"></p>
-                  </div>
-                  <div class="gallery-container">
-                    <h3 class="gallery-title">Ресторан Seafood</h3>
-                    <p class="gallery-name">Приложение</p>
-                  </div>
+            <li class="gallery__item">
+              <a class="gallery__link" href="/">
+                <div class="gallery__animation">
+                  <img
+                    src="./images/Portfolio/seafood.jpg"
+                    width="370"
+                    height="294"
+                    alt="Логотип ресторана Seafood "
+                  />
+                  <p class="gallery__text"></p>
+                </div>
+                <div class="gallery__container">
+                  <h3 class="gallery__title">Ресторан Seafood</h3>
+                  <p class="gallery__name">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="gallery-item grid-item">
-              <a class="gallery-link" href="/">
-                <div class="gallery-wrap">
-                  <div class="gallery-animation">
-                    <img
-                      src="./images/Portfolio/prime.jpg"
-                      width="370"
-                      height="294"
-                      alt="Наушники"
-                    />
-                    <p class="gallery-text"></p>
-                  </div>
-                  <div class="gallery-container">
-                    <h3 class="gallery-title">Проект Prime</h3>
-                    <p class="gallery-name">Маркетинг</p>
-                  </div>
+            <li class="gallery__item">
+              <a class="gallery__link" href="/">
+                <div class="gallery__animation">
+                  <img
+                    src="./images/Portfolio/prime.jpg"
+                    width="370"
+                    height="294"
+                    alt="Наушники"
+                  />
+                  <p class="gallery__text"></p>
+                </div>
+                <div class="gallery__container">
+                  <h3 class="gallery__title">Проект Prime</h3>
+                  <p class="gallery__name">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="gallery-item grid-item">
-              <a class="gallery-link" href="/">
-                <div class="gallery-wrap">
-                  <div class="gallery-animation">
-                    <img
-                      src="./images/Portfolio/boxes.jpg"
-                      width="370"
-                      height="294"
-                      alt="Две картонные коробки"
-                    />
-                    <p class="gallery-text"></p>
-                  </div>
-                  <div class="gallery-container">
-                    <h3 class="gallery-title">Проект Boxes</h3>
-                    <p class="gallery-name">Приложение</p>
-                  </div>
+            <li class="gallery__item">
+              <a class="gallery__link" href="/">
+                <div class="gallery__animation">
+                  <img
+                    src="./images/Portfolio/boxes.jpg"
+                    width="370"
+                    height="294"
+                    alt="Две картонные коробки"
+                  />
+                  <p class="gallery__text"></p>
+                </div>
+                <div class="gallery__container">
+                  <h3 class="gallery__title">Проект Boxes</h3>
+                  <p class="gallery__name">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="gallery-item grid-item">
-              <a class="gallery-link" href="/">
-                <div class="gallery-wrap">
-                  <div class="gallery-animation">
-                    <img
-                      src="./images/Portfolio/inspiration-has-no-borders.jpg"
-                      width="370"
-                      height="294"
-                      alt="Манитор"
-                    />
-                    <p class="gallery-text"></p>
-                  </div>
-                  <div class="gallery-container">
-                    <h3 class="gallery-title">Inspiration has no Borders</h3>
-                    <p class="gallery-name">Веб-сайт</p>
-                  </div>
+            <li class="gallery__item">
+              <a class="gallery__link" href="/">
+                <div class="gallery__animation">
+                  <img
+                    src="./images/Portfolio/inspiration-has-no-borders.jpg"
+                    width="370"
+                    height="294"
+                    alt="Манитор"
+                  />
+                  <p class="gallery__text"></p>
+                </div>
+                <div class="gallery__container">
+                  <h3 class="gallery__title">Inspiration has no Borders</h3>
+                  <p class="gallery__name">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="gallery-item grid-item">
-              <a class="gallery-link" href="/">
-                <div class="gallery-wrap">
-                  <div class="gallery-animation">
-                    <img
-                      src="./images/Portfolio/limited-edition.jpg"
-                      width="370"
-                      height="294"
-                      alt="Открытый журнал"
-                    />
-                    <p class="gallery-text"></p>
-                  </div>
-                  <div class="gallery-container">
-                    <h3 class="gallery-title">Издание Limited Edition</h3>
-                    <p class="gallery-name">Дизайн</p>
-                  </div>
+            <li class="gallery__item">
+              <a class="gallery__link" href="/">
+                <div class="gallery__animation">
+                  <img
+                    src="./images/Portfolio/limited-edition.jpg"
+                    width="370"
+                    height="294"
+                    alt="Открытый журнал"
+                  />
+                  <p class="gallery__text"></p>
+                </div>
+                <div class="gallery__container">
+                  <h3 class="gallery__title">Издание Limited Edition</h3>
+                  <p class="gallery__name">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="gallery-item grid-item">
-              <a class="gallery-link" href="/">
-                <div class="gallery-wrap">
-                  <div class="gallery-animation">
-                    <img
-                      src="./images/Portfolio/lab.jpg"
-                      width="370"
-                      height="294"
-                      alt="Этикетка"
-                    />
-                    <p class="gallery-text"></p>
-                  </div>
-                  <div class="gallery-container">
-                    <h3 class="gallery-title">Проект LAB</h3>
-                    <p class="gallery-name">Маркетинг</p>
-                  </div>
+            <li class="gallery__item">
+              <a class="gallery__link" href="/">
+                <div class="gallery__animation">
+                  <img
+                    src="./images/Portfolio/lab.jpg"
+                    width="370"
+                    height="294"
+                    alt="Этикетка"
+                  />
+                  <p class="gallery__text"></p>
+                </div>
+                <div class="gallery__container">
+                  <h3 class="gallery__title">Проект LAB</h3>
+                  <p class="gallery__name">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="gallery-item grid-item">
-              <a class="gallery-link" href="/">
-                <div class="gallery-wrap">
-                  <div class="gallery-animation">
-                    <img
-                      src="./images/Portfolio/growing-business.jpg"
-                      width="370"
-                      height="294"
-                      alt="Человек работает на компьютере"
-                    />
-                    <p class="gallery-text"></p>
-                  </div>
-                  <div class="gallery-container">
-                    <h3 class="gallery-title">Growing Business</h3>
-                    <p class="gallery-name">Приложение</p>
-                  </div>
+            <li class="gallery__item">
+              <a class="gallery__link" href="/">
+                <div class="gallery__animation">
+                  <img
+                    src="./images/Portfolio/growing-business.jpg"
+                    width="370"
+                    height="294"
+                    alt="Человек работает на компьютере"
+                  />
+                  <p class="gallery__text"></p>
+                </div>
+                <div class="gallery__container">
+                  <h3 class="gallery__title">Growing Business</h3>
+                  <p class="gallery__name">Приложение</p>
                 </div>
               </a>
             </li>
@@ -290,29 +283,38 @@
     <!-- Подвал страницы -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-wrap">
-          <section class="footer-adress">
+        <div class="footer__container">
+          <section class="footer__section">
             <h2 class="visually-hidden">Адрес</h2>
-            <a class="logo" href="./index.html"
-              >Web<span class="tiny">Studio</span></a
+            <a class="logo logo-footer" href="./index.html"
+              >Web<span class="logo--light">Studio</span></a
             >
-
             <address>
-              <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-              <a class="address-item" href="mailto:info@devstudio.com"
+              <p class="address__text address__list">
+                г. Киев, пр-т Леси Украинки, 26
+              </p>
+              <a
+                class="address__item address__list"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
-              <a class="address-item" href="tel:+380961111111"
+              <a class="address__item address__list" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </address>
           </section>
-          <section class="footer-networks">
-            <h2 class="footer-title">присоединяйтесь</h2>
-            <ul class="networks list">
-              <li class="networks-item">
-                <a class="networks-link" href="/" aria-label="instagram">
-                  <svg class="networks-icon">
+
+          <section class="footer__section">
+            <h2 class="footer__title">присоединяйтесь</h2>
+            <ul class="social footer__social list">
+              <li class="footer__item">
+                <a
+                  class="social__link footer__link"
+                  href="/"
+                  rel="noreferrer noopener"
+                  aria-label="instagram"
+                >
+                  <svg class="social__icon footer__icon">
                     <use
                       href="./images/background/icons.svg#icon-instagram-2"
                     ></use>
@@ -320,14 +322,14 @@
                 </a>
               </li>
 
-              <li class="networks-item">
+              <li class="footer__item">
                 <a
-                  class="networks-link"
+                  class="social__link footer__link"
                   href="/"
                   rel="noreferrer noopener"
                   aria-label="twitter"
                 >
-                  <svg class="networks-icon">
+                  <svg class="social__icon footer__icon">
                     <use
                       href="./images/background/icons.svg#icon-twitter-1"
                     ></use>
@@ -335,14 +337,14 @@
                 </a>
               </li>
 
-              <li class="networks-item">
+              <li class="footer__item">
                 <a
-                  class="networks-link"
+                  class="social__link footer__link"
                   href="/"
                   rel="noreferrer noopener"
                   aria-label="facebook"
                 >
-                  <svg class="networks-icon">
+                  <svg class="social__icon footer__icon">
                     <use
                       href="./images/background/icons.svg#icon-facebook-1"
                     ></use>
@@ -350,14 +352,14 @@
                 </a>
               </li>
 
-              <li class="networks-item">
+              <li class="footer__item">
                 <a
-                  class="networks-link"
+                  class="social__link footer__link"
                   href="/"
                   rel="noreferrer noopener"
                   aria-label="linkedin"
                 >
-                  <svg class="networks-icon">
+                  <svg class="social__icon footer__icon">
                     <use
                       href="./images/background/icons.svg#icon-linkedin-1"
                     ></use>
@@ -366,18 +368,19 @@
               </li>
             </ul>
           </section>
-          <section class="footer-section-form">
-            <h2 class="footer-title">Подпишитесь на рассылку</h2>
-            <form class="footer-form">
+
+          <section class="mailing">
+            <h2 class="footer__title">Подпишитесь на рассылку</h2>
+            <form class="mailing-form">
               <input
                 type="email"
-                class="footer-form-input"
+                class="mailing-form__field"
                 name="email"
                 placeholder="E-mail"
               />
-              <button class="footer-form-btn" type="submit">
+              <button class="mailing-form__btn" type="submit">
                 <span>Подписаться</span>
-                <svg class="icon-footer-send">
+                <svg class="mailing-form__icon">
                   <use
                     href="./images/background/icons.svg#icon-icon-send"
                   ></use>
