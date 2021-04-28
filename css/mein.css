@@ -633,7 +633,7 @@ img {
 }
 
 .hero__content {
-  width: calc(100% / 12 * 6);
+  width: calc(100% / 12 * 5);
   margin: 0 auto;
   text-align: center;
 }
